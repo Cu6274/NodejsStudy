@@ -1,6 +1,6 @@
 var http = require('http');
 http.createServer(function(req, res){
-  var num = perseInt(req.url.slice(1));
+  var num = parseInt(req.url.slice(1));
   if (isNaN(num)){
     res.end();
     return;
